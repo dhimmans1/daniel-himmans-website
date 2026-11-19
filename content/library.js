@@ -71,4 +71,4 @@ const scenes=[
 'Backup assurance, patching coverage, asset visibility and documented recovery procedures all contributed to reducing operational exposure. My work sat at the practical boundary between Cloud Operations, resilience and security colleagues.',
 'The Cloud Operations function also had early involvement with a SOC capability that later developed into a dedicated 24/7 function. My exposure included Microsoft Sentinel and Cyber Essentials Plus support, alongside the operational leadership required during the ransomware response.']}
 ];
-const sceneOrder=['modernisation','foundation','engineering','people','resilience','incident','stakeholders','commercial','change','service','security'];
+const sceneOrder=['modernisation','monitoring','foundation','engineering','service-design','governance','supplier-governance','people','organisation','resilience','incident','stakeholders','commercial','change','service','security'];
