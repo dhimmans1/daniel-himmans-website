@@ -31,7 +31,7 @@ function build(){
  let ids=arr.map(x=>x.id),single=arr.length===1,first=arr[0];
  let title=single?first.title:makeTitle(arr);
  let lead=single?first.lead:narrativeOpening(ids);
- let content=`<div class="storyhead"><div class="eyebrow">${single?'A closer look · Deep dive':'A connected perspective · Integrated narrative'}</div><h2>${escapeHtml(title)}</h2><div class="tags">${arr.map(x=>`<span class="tag">${escapeHtml(x.name)}</span>`).join('')}</div><p class="lead">${escapeHtml(lead)}</p>${single?'<p class="narrative-context">The experiences below come principally from my progression at Intercity Technology, where I moved from Cloud Operations Engineer into managing teams and services across multiple customer environments.</p>':''}</div><div class="story">`;
+ let content=`<div class="storyhead"><div class="eyebrow">${single?'A closer look · Deep dive':'A connected perspective · Integrated narrative'}</div><h2>${escapeHtml(title)}</h2><div class="tags">${arr.map(x=>`<span class="tag">${escapeHtml(x.name)}</span>`).join('')}</div><p class="lead">${escapeHtml(lead)}</p></div><div class="story">`;
  let chosen=selectScenes(ids,single),shownVisuals=new Set();
  // The context is told only once, and only where needed.
  for(let i=0;i<chosen.length;i++){
